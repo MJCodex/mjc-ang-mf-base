@@ -1,0 +1,11 @@
+<mat-toolbar class="nav-bar">
+  <mat-toolbar-row>
+    <a mat-button routerLink="/">Shell Inicio</a>
+    <a mat-button routerLink="/products">Productos</a>
+    <a mat-button routerLink="/payment">Pagar</a>
+    <button mat-mini-fab>
+      <h4>+{{commonsLibService.channelPayment$ | async}}</h4>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+

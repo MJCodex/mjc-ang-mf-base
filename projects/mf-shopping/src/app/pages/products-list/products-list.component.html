@@ -1,0 +1,14 @@
+<h1>Lista de productos</h1>
+<div class="router-outlet-content">
+  <p>Este es un componente del mf-shopping</p>
+  <div class="cards-container">
+    <ng-container *ngFor="let card of totalCards">
+      <app-card>
+        <ng-container card>
+          <button mat-raised-button routerLink="./{{card}}/detail" color="primary">Detalle</button>
+        </ng-container>
+      </app-card>
+    </ng-container>
+  </div>
+</div>
+<router-outlet></router-outlet>

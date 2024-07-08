@@ -1,0 +1,12 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>Tarjeta</mat-card-title>
+    <mat-card-subtitle>Productos</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions class="card-actions">
+    <ng-content select="[card]"></ng-content>
+    <button mat-raised-button (click)="addToCar()" color="accent"
+            class="last-action-button">Agregar
+    </button>
+  </mat-card-actions>
+</mat-card>
